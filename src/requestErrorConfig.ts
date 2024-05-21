@@ -88,6 +88,7 @@ export const errorConfig: RequestConfig = {
   // 请求拦截器
   requestInterceptors: [
     (config: RequestOptions) => {
+      console.log('=== 请求拦截器: ', 'Bob', config);
       // 拦截请求配置，进行个性化处理。
       const url = config?.url?.concat('?token = 123');
       return { ...config, url };
@@ -97,6 +98,7 @@ export const errorConfig: RequestConfig = {
   // 响应拦截器
   responseInterceptors: [
     (response) => {
+      console.log('=== 响应拦截器: ', 'Bob', response);
       // 拦截响应数据，进行个性化处理
       const { data } = response as unknown as ResponseStructure;
 

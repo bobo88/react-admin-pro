@@ -91,12 +91,12 @@ const Welcome: React.FC = () => {
       <Card
         style={{
           borderRadius: 8,
-        }}
-        bodyStyle={{
-          backgroundImage:
-            initialState?.settings?.navTheme === 'realDark'
-              ? 'background-image: linear-gradient(75deg, #1A1B1F 0%, #191C1F 100%)'
-              : 'background-image: linear-gradient(75deg, #FBFDFF 0%, #F5F7FF 100%)',
+          body: {
+            backgroundImage:
+              initialState?.settings?.navTheme === 'realDark'
+                ? 'background-image: linear-gradient(75deg, #1A1B1F 0%, #191C1F 100%)'
+                : 'background-image: linear-gradient(75deg, #FBFDFF 0%, #F5F7FF 100%)',
+          },
         }}
       >
         <div
@@ -137,21 +137,21 @@ const Welcome: React.FC = () => {
           >
             <InfoCard
               index={1}
-              href="https://umijs.org/docs/introduce/introduce"
-              title="了解 umi"
-              desc="umi 是一个可扩展的企业级前端应用框架,umi 以路由为基础的，同时支持配置式路由和约定式路由，保证路由的功能完备，并以此进行功能扩展。"
+              href="https://fe.ycy88.com/keywords/"
+              title="规范流程和最佳实践"
+              desc="探讨技术团队中的规范流程和最佳实践，以提高开发效率和代码质量。"
             />
             <InfoCard
               index={2}
-              title="了解 ant design"
-              href="https://ant.design"
-              desc="antd 是基于 Ant Design 设计体系的 React UI 组件库，主要用于研发企业级中后台产品。"
+              title="主流技术"
+              href="https://fe.ycy88.com/react/"
+              desc="介绍 VUE、React、网络协议、TypeScript 等主流技术，涵盖跨端解决方案、小程序开发以及 CI/CD 实践。"
             />
             <InfoCard
               index={3}
-              title="了解 Pro Components"
-              href="https://procomponents.ant.design"
-              desc="ProComponents 是一个基于 Ant Design 做了更高抽象的模板组件，以 一个组件就是一个页面为开发理念，为中后台开发带来更好的体验。"
+              title="全栈工程师"
+              href="https://fe.ycy88.com/java/"
+              desc="深入研究和实践 Node.js 技术栈，拓展对 Node 生态系统的全面理解。解析全栈工程师的必经之路，聚焦设计模式、数据结构和数据库等核心概念。"
             />
           </div>
         </div>
