@@ -28,29 +28,35 @@ export default [
     icon: 'smile',
     component: './Welcome',
   },
+  // {
+  //   path: '/admin',
+  //   name: 'admin',
+  //   icon: 'crown',
+  //   access: 'canAdmin',
+  //   routes: [
+  //     {
+  //       path: '/admin',
+  //       redirect: '/admin/sub-page',
+  //     },
+  //     {
+  //       path: '/admin/sub-page',
+  //       name: 'sub-page',
+  //       component: './Admin',
+  //     },
+  //   ],
+  // },
   {
-    path: '/admin',
-    name: 'admin',
-    icon: 'crown',
-    access: 'canAdmin',
-    routes: [
-      {
-        path: '/admin',
-        redirect: '/admin/sub-page',
-      },
-      {
-        path: '/admin/sub-page',
-        name: 'sub-page',
-        component: './Admin',
-      },
-    ],
-  },
-  {
-    name: 'list.table-list',
+    name: 'list.hot-list',
     icon: 'table',
-    path: '/list',
-    component: './TableList',
+    path: '/hot-list',
+    component: './HotList',
   },
+  // {
+  //   name: 'list.table-list',
+  //   icon: 'table',
+  //   path: '/list',
+  //   component: './TableList',
+  // },
   {
     path: '/',
     redirect: '/welcome',
